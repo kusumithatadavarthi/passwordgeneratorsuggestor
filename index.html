@@ -1,0 +1,61 @@
+<!--🧱 HTML Requirements
+Create a UI that includes:
+
+Input Field to show generated password (read-only).
+
+Number Input: Password length (e.g., 6–30).
+
+Checkboxes:
+
+Include Uppercase Letters
+
+Include Lowercase Letters
+
+Include Numbers
+
+Include Symbols
+
+Buttons:
+
+Generate Password
+
+Copy to Clipboard (optional/bonus)
+
+Optional Div/Span for password strength display.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/gen.css">
+</head>
+<body>
+    <header>
+        <h1>Password Generator</h1>
+        <h3>Generates password according to your work</h3>
+        <nav>
+            <button onclick="login()" class="btn">Login</button>
+            <button onclick="signup()" class="btn">signup</button>
+            <button onclick="contact()" class="btn">contact</button>
+            <button onclick="help()" class="btn">Help</button>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+        <input type="text" id="genpwd" value="generate-password" readonly>
+        <p>Please enter the no of digits password should be</p>
+        <input type="number" id="num" value="0"><br>
+        <input type="checkbox" id="cbox1"><span>Include UpperCase</span><br>
+        <input type="checkbox" id="cbox2"><span>Include LowerCase</span><br>
+        <input type="checkbox" id="cbox3"><span>Include Numbers</span><br>
+        <input type="checkbox" id="cbox4"><span>Include Symbols</span><br>
+        <button id="btn1" onclick="generate()">Generate</button>
+        <span id="sol"></span>
+        </div>
+        <script src="js/gen.js"></script>
+    </main>
+</body>
+</html>
